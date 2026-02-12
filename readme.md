@@ -12,3 +12,6 @@
 * Creamos un fichero readme.md
 * Creamos un fichero .gitignore
     * Dentro metemos .venv/
+# Para hacer llamadas a una API por Http tenemos que instalar el modulo request.
+* pip install requests
+* pip freeze > requirements.txt
