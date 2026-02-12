@@ -14,9 +14,9 @@ class TaskManager:
         self._next_id = 1
 
     def add_task(self, description):
-        task = Task(self.next_id, description)
+        task = Task(self._next_id, description)
         self._tasks.append(task)
-        self.next_id += 1
+        self._next_id += 1
         return task
 
     def list_tasks(self):
@@ -28,6 +28,13 @@ class TaskManager:
         for task in self._tasks:
             if task.id == id:
                 task.completed = True
+                return task
+        return None
+    
+    def delete_task(self, id):
+        for task in self._tasks:
+            if task.id == id:
+                self._tasks.remove(task)
                 return task
         return None
 
