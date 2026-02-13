@@ -13,5 +13,12 @@
 * Creamos un fichero .gitignore
     * Dentro metemos .venv/
 # Para hacer llamadas a una API por Http tenemos que instalar el modulo request.
+* Hay que recordar que antes de instalar nada, hay que tener activo el entorno virtual.
 * pip install requests
+* python.exe -m pip install --upgrade pip -> Sugerido por la línea de comandos.
 * pip freeze > requirements.txt
+
+* pip install openai
+* pip freeze > requirements.txt
+
+* pip install dotenv
